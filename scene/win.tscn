@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://font/Tigerious-ywyKe.otf" type="DynamicFontData" id=1]
+[ext_resource path="res://font/OrganicalPersonalUseBoldItalic-2O6xe.ttf" type="DynamicFontData" id=2]
+[ext_resource path="res://gd/menubutton.gd" type="Script" id=3]
+[ext_resource path="res://gd/onemore.gd" type="Script" id=4]
+[ext_resource path="res://sound/maou_game_jingle05.mp3" type="AudioStream" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 186
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 90
+font_data = ExtResource( 2 )
+
+[node name="win" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 960.0
+margin_bottom = 544.0
+color = Color( 0.176471, 0.443137, 0.0588235, 1 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 32.0
+margin_top = 32.0
+margin_right = 915.0
+margin_bottom = 183.0
+custom_fonts/font = SubResource( 1 )
+text = "YOU WIN !!!"
+
+[node name="menu" type="Button" parent="."]
+margin_left = 384.0
+margin_top = 384.0
+margin_right = 639.0
+margin_bottom = 501.0
+custom_fonts/font = SubResource( 2 )
+text = "MENU"
+flat = true
+script = ExtResource( 3 )
+
+[node name="onemore" type="Button" parent="."]
+margin_left = 256.0
+margin_top = 224.0
+margin_right = 761.0
+margin_bottom = 341.0
+custom_fonts/font = SubResource( 2 )
+text = "ONe MORE"
+flat = true
+script = ExtResource( 4 )
+
+[node name="Victory" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+volume_db = -9.0
+autoplay = true
+
+[connection signal="pressed" from="menu" to="menu" method="_on_menu_pressed"]
+[connection signal="pressed" from="onemore" to="onemore" method="_on_onemore_pressed"]

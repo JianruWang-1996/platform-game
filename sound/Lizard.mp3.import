@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Lizard.mp3-07e0a66440fd5769705bcda20bccd4a8.mp3str"
+
+[deps]
+
+source_file="res://sound/Lizard.mp3"
+dest_files=[ "res://.import/Lizard.mp3-07e0a66440fd5769705bcda20bccd4a8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

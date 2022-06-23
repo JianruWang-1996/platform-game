@@ -1,0 +1,53 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://gd/WorldComplete.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/portal/tile013.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/portal/tile019.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/portal/tile016.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/portal/tile014.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/portal/tile010.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/portal/tile020.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/portal/tile007.png" type="Texture" id=8]
+[ext_resource path="res://Sprites/portal/tile017.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/portal/tile009.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/portal/tile005.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/portal/tile004.png" type="Texture" id=12]
+[ext_resource path="res://Sprites/portal/tile011.png" type="Texture" id=13]
+[ext_resource path="res://Sprites/portal/tile000.png" type="Texture" id=14]
+[ext_resource path="res://Sprites/portal/tile001.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/portal/tile018.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/portal/tile006.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/portal/tile015.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/portal/tile008.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/portal/tile021.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/portal/tile003.png" type="Texture" id=21]
+[ext_resource path="res://Sprites/portal/tile002.png" type="Texture" id=22]
+[ext_resource path="res://Sprites/portal/tile012.png" type="Texture" id=23]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 14 ), ExtResource( 15 ), ExtResource( 22 ), ExtResource( 21 ), ExtResource( 12 ), ExtResource( 11 ), ExtResource( 17 ), ExtResource( 8 ), ExtResource( 19 ), ExtResource( 10 ), ExtResource( 6 ), ExtResource( 13 ), ExtResource( 23 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 18 ), ExtResource( 4 ), ExtResource( 9 ), ExtResource( 16 ), ExtResource( 3 ), ExtResource( 7 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "default",
+"speed": 7.0
+} ]
+
+[sub_resource type="CapsuleShape2D" id=2]
+height = 47.2
+
+[node name="WorldComplete" type="Area2D"]
+script = ExtResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -12, 8 )
+scale = Vector2( 4, 4 )
+frames = SubResource( 1 )
+frame = 19
+playing = true
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2( 114, 152 )
+scale = Vector2( 2.5, 2.5 )
+shape = SubResource( 2 )

@@ -1,0 +1,63 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://font/OrganicalPersonalUseBoldItalic-2O6xe.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://font/TigeriousItalic-9YyJn.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://font/Tigerious-ywyKe.otf" type="DynamicFontData" id=3]
+[ext_resource path="res://gd/Button.gd" type="Script" id=4]
+[ext_resource path="res://sound/syurei.mp3" type="AudioStream" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 118
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+font_data = ExtResource( 2 )
+
+[sub_resource type="DynamicFont" id=3]
+size = 38
+font_data = ExtResource( 3 )
+
+[node name="Control" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 960.0
+margin_bottom = 544.0
+color = Color( 0.894118, 0.0431373, 0.988235, 1 )
+
+[node name="Label" type="Label" parent="ColorRect"]
+margin_left = 96.0
+margin_top = 64.0
+margin_right = 861.0
+margin_bottom = 209.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "Control Key"
+
+[node name="Label2" type="Label" parent="ColorRect"]
+margin_left = 128.0
+margin_top = 256.0
+margin_right = 830.0
+margin_bottom = 409.0
+custom_fonts/font = SubResource( 2 )
+text = "JUMP:  UP Arrow
+run:  LEFT/right arrow
+shoot:  spacekey"
+
+[node name="Button" type="Button" parent="ColorRect"]
+margin_left = 416.0
+margin_top = 448.0
+margin_right = 576.0
+margin_bottom = 512.0
+custom_fonts/font = SubResource( 3 )
+text = "MENU"
+script = ExtResource( 4 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+volume_db = -10.0
+autoplay = true
+
+[connection signal="pressed" from="ColorRect/Button" to="ColorRect/Button" method="_on_Button_pressed"]

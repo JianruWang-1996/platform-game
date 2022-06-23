@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/スライムの攻撃.mp3-d8ba1ac804ba9bfd65d047f52661c47b.mp3str"
+
+[deps]
+
+source_file="res://sound/スライムの攻撃.mp3"
+dest_files=[ "res://.import/スライムの攻撃.mp3-d8ba1ac804ba9bfd65d047f52661c47b.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

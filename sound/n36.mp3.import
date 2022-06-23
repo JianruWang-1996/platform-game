@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/n36.mp3-bab56333b8a77f1f7e14bd013b29606c.mp3str"
+
+[deps]
+
+source_file="res://sound/n36.mp3"
+dest_files=[ "res://.import/n36.mp3-bab56333b8a77f1f7e14bd013b29606c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

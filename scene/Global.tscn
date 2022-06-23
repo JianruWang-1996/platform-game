@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://gd/Global.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+visible = false
+script = ExtResource( 1 )
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="LifeCount" type="Label" parent="HUD"]
+visible = false
+margin_right = 40.0
+margin_bottom = 14.0

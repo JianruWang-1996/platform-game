@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/「ぐっ！」.mp3-217ca67aad8a53ce4e20de0b49b215f8.mp3str"
+
+[deps]
+
+source_file="res://sound/「ぐっ！」.mp3"
+dest_files=[ "res://.import/「ぐっ！」.mp3-217ca67aad8a53ce4e20de0b49b215f8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

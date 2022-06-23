@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/FireShoot.mp3-d86037b6672828745c46000c9f1a111d.mp3str"
+
+[deps]
+
+source_file="res://sound/FireShoot.mp3"
+dest_files=[ "res://.import/FireShoot.mp3-d86037b6672828745c46000c9f1a111d.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
